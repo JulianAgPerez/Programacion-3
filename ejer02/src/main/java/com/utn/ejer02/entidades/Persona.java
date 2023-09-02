@@ -23,7 +23,7 @@ public class Persona implements Serializable {
     private int edad;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "domicilio_id")
+    @JoinColumn(name = "domicilio_id")  //fuerza que se llame domicilio_id en la tabla
 
     private Domicilio domicilio;
 

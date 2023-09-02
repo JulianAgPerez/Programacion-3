@@ -27,13 +27,10 @@ public class Ejer02Application {
 			System.out.println("-----------------ESTOY FUNCIONANDO---------");
 
 /*
-El método builder() se genera automáticamente por Lombok
-y te permite crear una instancia de Persona.Builder.
-Luego, puedes encadenar llamadas a los métodos
-setters generados automáticamente para establecer los
+El método builder() se genera automáticamente por Lombok y te permite crear una instancia de Persona.Builder.
+Luego, puedes encadenar llamadas a los métodos setters generados automáticamente para establecer los
 valores de los atributos de la clase.
-Finalmente, build() crea la instancia
- de la clase Persona con los valores proporcionados.
+Finalmente, build() crea la instancia de la clase Persona con los valores proporcionados.
 
  */
 			Persona persona = Persona.builder()
@@ -52,10 +49,10 @@ Finalmente, build() crea la instancia
 
 			// Guardar el objeto Persona en la base de datos
 
-			personaRepository.save(persona);
+			personaRepo.save(persona);
 
 			// Recuperar el objeto Persona desde la base de datos
-			Persona personaRecuperada = personaRepository.findById(persona.getId()).orElse(null);
+			Persona personaRecuperada = personaRepo.findById(persona.getId()).orElse(null);
 			if (personaRecuperada != null) {
 				System.out.println("Nombre: " + personaRecuperada.getNombre());
 				System.out.println("Apellido: " + personaRecuperada.getApellido());
