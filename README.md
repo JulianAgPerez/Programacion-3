@@ -4,7 +4,7 @@ Persistencia de Persona
 ### [Ejercicio 2][2]
 Relacion Unidireccional OneToOne
 
-### [Modelo 1- TP1][3]
+### [Modelo 1 TP1][3]
 Modelo base hardcode del proyecto
 
 
